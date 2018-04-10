@@ -1,0 +1,55 @@
+.to-do-box-1 {
+    background: #4D648D;
+    color: white;
+}
+
+.to-do-title {
+    font-weight: bold;
+}
+
+.each-col {
+    border-radius: 10px;
+}
+
+.each-col p {
+    font-weight: bold;
+}
+
+.each-task {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* .quick-note {
+    background: black;
+} */
+
+.quick-note textarea {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* textarea {
+    font-size: 14px;
+    width: 89%;
+} */
+
+body {
+    background: #283655;
+}
+
+.logo {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.to-do-box, .navbar {
+    background: #1E1F26;
+    color: white;
+}
+
+.btn-yellow {
+    background: #4D648D;
+    color: white;
+}

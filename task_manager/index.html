@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task Manager</title>
+    <link rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+    crossorigin="anonymous">
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand navbar-light">
+        <a class="logo mx-auto" href="#">Task Manager</a>
+    </nav>
+    <div class="container">
+        <!-- adding new task form -->  
+        <div class="row mt-5 mb-4">
+            <div class="col-md-9">
+                <form id='add-new-task-form'>
+                    <div class="row">
+                        <div class="col-md-8 mb-4">
+                            <input id='new-task-detail' type="text" class="form-control" placeholder="Add New Task">
+                        </div>
+                        <div class='col-md-4 mb-4'>
+                            <button type='submit' class="btn btn-yellow btn-block">Add New Task</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-block btn-danger" id="clear-all">Clear All</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div ondrop="drop(event, this)" ondragover="allowDrop(event)" class="to-do-box pl-3 pr-3 pt-2 pb-2 each-col">
+                    <p>To Do</p>
+                    <ul id="to-do-col" class='list-unstyled collection'></ul>
+                </div>
+            </div>
+            <div class="col">
+                <div ondrop="drop(event, this)" ondragover="allowDrop(event)" class="to-do-box pl-3 pr-3 pt-2 pb-2 each-col">
+                    <p>In Process</p>
+                    <ul id='to-do-col-2' class='list-unstyled collection'></ul>
+                </div>
+            </div>
+            <div class="col">
+                <div ondrop="drop(event, this)" ondragover="allowDrop(event)" class="to-do-box pl-3 pr-3 pt-2 pb-2 each-col">
+                    <p>Done</p>
+                    <ul id='to-do-col-3' class='list-unstyled collection'></ul>
+                </div>
+            </div>
+            <div class="col quick-note d-none d-md-block d-sm-block">
+                <div>
+                    <textarea placeholder="Quick Note" rows="10"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
