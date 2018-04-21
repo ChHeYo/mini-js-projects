@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "Michael Lee",
+        "phonenumber": "111-222-3333" 
+    },
+    {
+        "id": 2,
+        "name": "Michael Brown",
+        "phonenumber": "800-210-0434"  
+    },
+    {
+        "id": 3,
+        "name": "Florence Gee",
+        "phonenumber": "112-455-3256" 
+    }
+]

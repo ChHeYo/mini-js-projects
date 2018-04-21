@@ -1,0 +1,13 @@
+modular js points
+1. separation of concerns 
+    => separate js into modules whose functionalities overlap as little as possible
+2. memory management
+    => no memory leak
+    => unbound events 
+3. efficient DOM manipulation
+    => very few selectors
+4. DRY
+5. self-contained module
+    => no global var
+    => everything related to a module should be in the module
+    => if a module manages more than one thing => split up
